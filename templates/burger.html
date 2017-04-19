@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+    ul {
+      list-style-type: none;
+	    text-align: center;	
+    }
+    </style>
     <!-- Basic Page Needs
     ================================================== -->
     <meta charset="utf-8">
@@ -39,7 +45,8 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  
+ <body>
     <div id="tf-home">
         <div class="overlay">
             <div id="sticky-anchor"></div>
@@ -69,23 +76,29 @@
 
             <div class="container">
                 <div class="content">
-                    <h1>Calorie Estimation from Food Images</h1>
-                    <br>
-                    <br>
-                    <br>
-                    <a href="tf-contact" class="btn btn-primary my-btn">
-                      <form action="upload.php" method="post" enctype="multipart/form-data">
-                        Select image to upload:
-                        <input type="file" name="fileToUpload"  accept="image/*">
-                        <input type="submit">
-                      </form> 
+                           <h2>Photo</h2>
+        <hr/>
+        
+        <img src="/static/img/bkDog.jpg"/>
 
-                    </a>
+            <h3>This is an image of the Burger King hot dog.</h3>
+            <p>The Burger King hot dog contains: <span class="blueText">310 Calories</span></p>
+
+            <ul>
+                <li>Beef hot dog</li>
+                <li>Sweet relish</li>
+                <li>Ketchup</li>
+                <li>Mustard</li>
+                <li>Onions</li>
+                <li>Bun</li>
+            </ul>
+
                 </div>
             </div>
         </div>
     </div>
-
+    
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.1.11.1.js"></script>

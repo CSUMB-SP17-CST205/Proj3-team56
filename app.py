@@ -6,6 +6,10 @@ app = Flask(__name__)
 @app.route('/')
 def login():
 	return render_template('index.html')
+@app.route('/burger')
+def one():
+	return render_template('burger.html')
+
 
 if __name__ == '__main__':
     app.run(

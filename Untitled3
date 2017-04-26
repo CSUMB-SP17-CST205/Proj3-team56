@@ -1,0 +1,3 @@
+weekNumber = "5"
+className = "CST 205"
+print("This is week " + weekNumber + " of " + className + ".")

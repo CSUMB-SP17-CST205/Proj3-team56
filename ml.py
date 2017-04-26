@@ -29,9 +29,7 @@ def image_accuracy(image_path):
         top_k = predictions[0].argsort()[-len(predictions[0]):][::-1]
     
         for node_id in top_k:
-            human_string = label_lines[node_id]
+            food_item = label_lines[node_id]
             score = predictions[0][node_id]
-            print('%s (score = %.5f)' % (human_string, score))
-            if score > 0.90:
-                return human_string
-            
+            print('%s (score = %.5f)' % (food_item, score))
+            return food_item

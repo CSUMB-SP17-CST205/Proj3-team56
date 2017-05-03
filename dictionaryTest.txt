@@ -1,1 +1,0 @@
-{'Saturated Fat': '6 g', 'Trans Fat': '1 g', 'Total Fat': '16 g', 'Sodium': '960 mg', 'Carbohydrates': '32 g', 'Cholesterol': '30 mg', 'Calories': 310, 'Protein': '11 g', 'Total Sugar': '10 g'}

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      h1.hidden {
+        visibility: hidden
+      }
+    </style>
     <!-- Basic Page Needs
     ================================================== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Homepage</title>
-    <meta name="description" content="Your Description Here">
-    <meta name="keywords" content="bootstrap themes, portfolio, responsive theme">
-    <meta name="author" content="ThemeForces.Com">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css"  href="static/css/bootstrap.css">
@@ -16,12 +18,12 @@
     <!-- Stylesheet
     ================================================== -->
     <link rel="stylesheet" type="text/css"  href="static/css/style.css">
-
+    <link rel="stylesheet" type="text/css" href="static/css/responsive.css">
 
     <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,100,800,900,400,200,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
-
   </head>
+  
   <body>
     <div id="tf-home">
         <div class="overlay">
@@ -53,23 +55,24 @@
             <div class="container">
                 <div class="content">
                     <h1>Calorie Estimation from Food Images</h1>
-                    <br>
-                    <br>
-                    <br>
+
                       <form class="btn btn-primary my-btn" method=POST enctype=multipart/form-data action="{{ url_for('upload') }}">
-                        <!--<input class="form-control center" type="file" file-input="files" multiple>-->
                         <input type=file style="width:75px" name=photo>
                         <input type="submit">
                       </form>
+                      <h1><br />
+                          <br />
+                          <br />
+                          <br />
+                          <br />
+                      </h1>
+
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
    
-    <!--================================================== -->
-
   </body>
 </html>

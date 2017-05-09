@@ -4,7 +4,6 @@ from flask_uploads import UploadSet, configure_uploads, IMAGES
 from ml import image_accuracy
 import food
 
-
 app = Flask(__name__)
 
 photos = UploadSet('photos', IMAGES)
@@ -18,7 +17,7 @@ def upload():
     if request.method == 'POST' and 'photo' in request.files:
         photos.save(request.files['photo'])
 	picture = "static/img/" + str(request.files['photo'])[16:-17]
-	item = image_accuracy(picture)
+	item, score = image_accuracy(picture)
 	cal = str(food.food[item]['Calories'])
 	name = item.replace('_',' ').title()
 	sodium = food.food[item]['Sodium']
@@ -29,9 +28,14 @@ def upload():
 	s_fat = food.food[item]['Saturated Fat']
 	t_fat = food.food[item]['Trans Fat']
 	chol = food.food[item]['Cholesterol']
-    return render_template("food.html", item=item, cal=cal, name=name, sodium=sodium, 
-    						carbs=carbs, sugar=sugar, protein=protein, fat=fat, 
-    						s_fat=s_fat, t_fat=t_fat, chol=chol, picture=picture)
+	
+	if score > .9:
+		return render_template("food.html", item=item, cal=cal, name=name, sodium=sodium, 
+    							carbs=carbs, sugar=sugar, protein=protein, fat=fat, 
+    							s_fat=s_fat, t_fat=t_fat, chol=chol, picture=picture)
+    return render_template("item_not_found.html")
+    							
+    							
 @app.route('/')
 def login():
 	return render_template('index.html')

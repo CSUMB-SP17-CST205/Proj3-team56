@@ -149,7 +149,7 @@ a:focus{
 
 button.btn.btn-primary.my-btn,
 a.btn.btn-primary.my-btn {
-	background: transparent;
+	background: black;
 	border-color: transparent;
 	border-radius: 0px;
 	border-width: 2px;
@@ -158,6 +158,7 @@ a.btn.btn-primary.my-btn {
 	font-size: 12px;
 	letter-spacing: 1px;
 	font-weight: 600;
+	color: black;
 }
 button.btn.btn-primary.my-btn:hover,
 a.btn.btn-primary.my-btn:hover{
@@ -168,7 +169,7 @@ a.btn.btn-primary.my-btn:hover{
 button.btn.btn-primary.my-btn.dark:hover,
 a.btn.btn-primary.my-btn.dark:hover{
 	background: #222222;
-	color: #ffffff;
+	color: #FFFFFF;
 	border-color: transparent;
 }
 a.btn.btn-primary.my-btn2 {
@@ -239,3 +240,14 @@ ul.cat.list-inline li a:hover{
     text-align: center;
 
 }
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    color: blue;
+}
+

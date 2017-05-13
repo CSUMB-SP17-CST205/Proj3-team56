@@ -9,10 +9,10 @@ food = {
 
 "innouts_fries" : {None : 404,'Calories': 395, 'Sodium': '245 mg', 'Carbohydrates':'54 g', 'Total Sugar':'0 g', 'Protein':'7 g', 'Total Fat':'18 g', 'Saturated Fat': '5 g', 'Trans Fat': '0 g', 'Cholesterol': '0 mg'},
 
-"big_mac" : {None : 404,'Calories': 540, 'Sodium': '1040mg', 'Carbohydrates': '45g',  'Total Sugar': '9g', 'Protein': '25g', 'Total Fat': '29g', 'Saturated Fat': '10g', 'Trans Fat': '1.5g','Cholesterol': '75mg'},
+"mcdonalds_big_mac" : {None : 404,'Calories': 540, 'Sodium': '1040mg', 'Carbohydrates': '45g',  'Total Sugar': '9g', 'Protein': '25g', 'Total Fat': '29g', 'Saturated Fat': '10g', 'Trans Fat': '1.5g','Cholesterol': '75mg'},
 
-"double_QP_chz" : {None : 404,'Calories': 750, 'Sodium': '1280mg', 'Carbohydrates': '42', 'Total Sugar': '10g', 'Protein': '48g', 'Total Fat': '43g', 'Saturated Fat': '19g', 'Trans Fat': '3g', 'Cholesterol': '160mg'},
+"mcdonalds_double_quarter_pounder_with_cheese" : {None : 404,'Calories': 750, 'Sodium': '1280mg', 'Carbohydrates': '42', 'Total Sugar': '10g', 'Protein': '48g', 'Total Fat': '43g', 'Saturated Fat': '19g', 'Trans Fat': '3g', 'Cholesterol': '160mg'},
 
-"mcD_chz_bgr" : {None : 404,'Calories': 300, 'Sodium': '680mg', 'Carbohydrates': '33g', 'Total Sugar': '7g', 'Protein': '15g', 'Total Fat': '12g', 'Saturated Fat': '6g', 'Trans Fat': '1g', 'Cholesterol': '40mg'}
+"mcdonalds_cheeseburger" : {None : 404,'Calories': 300, 'Sodium': '680mg', 'Carbohydrates': '33g', 'Total Sugar': '7g', 'Protein': '15g', 'Total Fat': '12g', 'Saturated Fat': '6g', 'Trans Fat': '1g', 'Cholesterol': '40mg'}
 }
 

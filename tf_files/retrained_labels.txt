@@ -1,8 +1,8 @@
-innouts double double
-mcdonalds double quarter pounder with cheese
-mcdonalds big mac
-mcdonalds cheeseburgers
-burger kings medium fries
-burger kings hot dog
-innouts fries
-burger kings whopper
+innouts_double_double
+mcdonalds_double_quarter_pounder_with_cheese
+mcdonalds_big_mac
+mcdonalds_cheeseburger
+burger_kings_medium_fries
+burger_kings_hot_dog
+innouts_fries
+burger_kings_whopper

@@ -32,5 +32,4 @@ def image_accuracy(image_path):
             food_item = label_lines[node_id]
             score = predictions[0][node_id]
             print('%s (score = %.5f)' % (food_item, score))
-            print "{} (score = {})".format(food_item, score)
             return [food_item, score]

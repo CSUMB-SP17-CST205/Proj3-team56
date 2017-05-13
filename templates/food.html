@@ -2,19 +2,54 @@
 <html lang="en">
   <head>
     <style>
+    .dropbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
     
+    .dropdown-content a:hover {background-color: #f1f1f1}
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+    }
     table, th, td {
     border: 1px solid white;
     text-align: center;	
 
     }
-
+    
+    
+    
     </style>
     <!-- Basic Page Needs
     ================================================== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
     <title>Homepage</title>
   
     <!-- Bootstrap -->
@@ -27,6 +62,8 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,100,800,900,400,200,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
   </head>
+  
+  
   
  <body>
     <div id="tf-home">
@@ -48,9 +85,9 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#tf-home">About</a></li>
-                        <li><a href="#tf-service">Github</a></li>
-                        <li><a href="#tf-portfolio">Pictures</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="https://github.com/CSUMB-SP17-CST205/Proj3-team56">Github</a></li>
+                        <li><a href="/picture">Pictures</a></li>
                       </ul>
                     </div>
                 </div>
@@ -104,12 +141,26 @@
              
             </table>
             
-            <select class="icon-bar">
-              <option value="volvo">Volvo</option>
-              <option value="saab">Saab</option>
-              <option value="opel">Opel</option>
-              <option value="audi">Audi</option>
-            </select>
+            <br>
+            <br>
+            
+            <h3>How long would it take to burn these calories?</h3>
+            
+            <br>
+            
+            <button id="runningButton">Running</button>
+            <button id="swimingButton">Swiming</button>
+            <button id="bikingButton">Biking</button>
+              
+              <br>
+              <br>
+              <br>
+              
+              <div>
+                <div id="run-div" style="display:none;">On average it would take {{runningCal}} minute to burn {{name}} running at 5 mph. </div>
+                <div id="swim-div" style="display:none;">On average it would take {{swimmingCal}} minute to burn {{name}} swimming at a leisurely pace</div>
+                <div id="bike-div" style="display:none;">On average it would take {{bikingCal}} minute to burn {{name}} biking at 10 mph.</div>
+              </div>
 
                 </div>
             </div>
@@ -119,7 +170,22 @@
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-
+    <script type = "text/javascript">
+          $("#runningButton").click(function(){
+                $("#run-div").slideToggle();
+                $("#run-div").css("background-opacity", "3")
+                $("#run-div").css("color", "red");
+                $("#run-div").css("font-size", "36px")});
+                
+          $("#swimingButton").click(function(){
+                $("#swim-div").slideToggle();
+                $("#swim-div").css("font-color", "red");
+                $("#swim-div").css("font-size", "36px")});
+                
+          $("#bikingButton").click(function(){
+                $("#bike-div").slideToggle();
+                $("#bike-div").css("font-color", "red");
+                $("#bike-div").css("font-size", "36px")});
+    </script>
   </body>
 </html>

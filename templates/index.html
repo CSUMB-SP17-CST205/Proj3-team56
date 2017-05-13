@@ -60,22 +60,18 @@
                 </div>
             </nav>
 
-            <div class="container">
-                <div class="content">
-
-                    <h1>Calorie Estimation from Food Images</h1>
-                      <form class="btn btn-primary my-btn" method=POST enctype=multipart/form-data action="{{url_for('upload')}}">
-                        <input type=file style="width:75px" name=photo>
-                        <input type="submit" class='button'>
-                      </form>
-                      <h1>
-                      <br/>
-                      <br/>
-                      <br/>
-                      <br/>
-                      <br/>
-                      </h1>
-                </div>
+            <div class="content">
+              <h1>Calorie Estimation from Food Images</h1>
+                <form class="btn btn-primary my-btn" method=POST enctype=multipart/form-data action="{{url_for('upload')}}">
+                  <input type=file style="width:75px" name=photo>
+                  <input type="submit" class='button'>
+                </form>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+              </h1>
             </div>
         </div>
     </div>

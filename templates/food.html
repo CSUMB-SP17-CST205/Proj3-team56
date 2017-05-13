@@ -42,6 +42,18 @@
     text-align: center;	
 
     }
+    .button {
+      background-color: #FFFFFF;
+      border: none;
+      color: black;
+      padding: 3px 11px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
     
     
     
@@ -148,9 +160,9 @@
             
             <br>
             
-            <button id="runningButton">Running</button>
-            <button id="swimingButton">Swiming</button>
-            <button id="bikingButton">Biking</button>
+            <button class='button' id="runningButton">Running</button>
+            <button class='button' id="swimingButton">Swiming</button>
+            <button class='button' id="bikingButton">Biking</button>
               
               <br>
               <br>
@@ -174,7 +186,7 @@
           $("#runningButton").click(function(){
                 $("#run-div").slideToggle();
                 $("#run-div").css("background-opacity", "3")
-                $("#run-div").css("color", "red");
+                // $("#run-div").css("color", "red");
                 $("#run-div").css("font-size", "36px")});
                 
           $("#swimingButton").click(function(){

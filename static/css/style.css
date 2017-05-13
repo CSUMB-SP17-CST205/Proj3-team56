@@ -2,10 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Playball);
 
 body, html{
-<<<<<<< HEAD
-=======
 	color: #cfcfcf;
->>>>>>> jbranch
 	font-family: 'Raleway', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
@@ -42,11 +39,7 @@ a {
 }
 a:hover,
 a:focus{
-<<<<<<< HEAD
-	color: #2F937B;
-=======
 	color: blue;
->>>>>>> jbranch
 	text-decoration: none;
 }
 
@@ -68,19 +61,6 @@ a:focus{
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-<<<<<<< HEAD
-	background-repeat: no-repeat;
-	color: #cfcfcf;
-}
-
-#tf-home .overlay{
-	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
-=======
 	/*background-repeat: no-repeat;*/
 }
 
@@ -91,7 +71,6 @@ a:focus{
 	background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 100%,rgba(0,0,0,0.55) 100%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 100%,rgba(0,0,0,0.55) 100%,rgba(0,0,0,0.4) 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 100%,rgba(0,0,0,0.55) 100%,rgba(0,0,0,0.4) 100%); /* W3C */
->>>>>>> jbranch
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
 	height: auto;
 	background-attachment: fixed;
@@ -154,16 +133,7 @@ a:focus{
 
 }
 
-<<<<<<< HEAD
-.media-body h4 {
-	margin-bottom: 20px;
-	font-size: 16px;
-	font-weight: 700;
-	color: rgb(47, 147, 123);
-}
-=======
 
->>>>>>> jbranch
 
 #tf-portfolio{
 	background: #f1f1f1;
@@ -176,22 +146,10 @@ a:focus{
 	width: 60px;
 }
 
-<<<<<<< HEAD
-.section-title h2{ font-weight: 700;}
-button.btn,
-a.btn {
-	margin: 15px 5px;
-	transition: all 0.5s;
-}
-button.btn.btn-primary.my-btn,
-a.btn.btn-primary.my-btn {
-	background: #2F937B;
-=======
 
 button.btn.btn-primary.my-btn,
 a.btn.btn-primary.my-btn {
 	background: black;
->>>>>>> jbranch
 	border-color: transparent;
 	border-radius: 0px;
 	border-width: 2px;
@@ -200,10 +158,7 @@ a.btn.btn-primary.my-btn {
 	font-size: 12px;
 	letter-spacing: 1px;
 	font-weight: 600;
-<<<<<<< HEAD
-=======
 	color: black;
->>>>>>> jbranch
 }
 button.btn.btn-primary.my-btn:hover,
 a.btn.btn-primary.my-btn:hover{
@@ -214,11 +169,7 @@ a.btn.btn-primary.my-btn:hover{
 button.btn.btn-primary.my-btn.dark:hover,
 a.btn.btn-primary.my-btn.dark:hover{
 	background: #222222;
-<<<<<<< HEAD
-	color: #ffffff;
-=======
 	color: #FFFFFF;
->>>>>>> jbranch
 	border-color: transparent;
 }
 a.btn.btn-primary.my-btn2 {
@@ -260,18 +211,7 @@ ul.cat.list-inline li a:hover{
 .toppadding{ padding-top: 30px}
 .nopadding{ padding:  0;}
 
-<<<<<<< HEAD
-#tf-about{
-	background: url(../img/07.jpg);
-	background-size: cover;
-	background-position: center;
-	background-attachment: scroll;
-	background-repeat: no-repeat;
-	color: #222222;
-}
-=======
 
->>>>>>> jbranch
 
 #tf-about .overlay{
 	height: auto;
@@ -279,76 +219,11 @@ ul.cat.list-inline li a:hover{
 	padding: 10% 0;
 }
 
-<<<<<<< HEAD
-#tf-why-me{
-	background: url(../img/10.jpg);
-	background-size: cover;
-	background-position: center;
-	background-attachment: scroll;
-	background-repeat: no-repeat;
-	color: #222222;
-}
-
-=======
->>>>>>> jbranch
 #tf-why-me .overlay{
 	height: auto;
 	background-attachment: fixed;
 	padding: 5% 0;
 }
-<<<<<<< HEAD
-ul.why-me li{
-	margin: 10px 0;
-}
-#tf-contact{
-	background: url(../img/08.jpg);
-	background-size: cover;
-	background-position: center;
-	background-attachment: scroll;
-	background-repeat: no-repeat;
-	padding: 5% 0;
-	text-align: center;
-}
-
-form#contact {
-	padding: 5%;
-	background: #f1f1f1;
-	outline: 6px solid rgba(34, 34, 34, 0.08);
-}
-
-#tf-contact input.form-control {
-	height: 40px;
-}
-
-#tf-contact .form-control{
-	display: block;
-	width: 100%;
-	margin-bottom: 20px;
-	padding: 16px 12px;
-	font-size: 14px;
-	line-height: 1.42857143;
-	color: #555;
-	background-color: #FFF;
-	background-image: none;
-	border: 1px solid #FFF;
-	border-radius: 0;
-	border-top: 2px solid transparent;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	-webkit-transition: none;
-	-o-transition: none;
-	transition: all 0.8s;
-}
-#tf-contact .form-control:focus,
-#tf-contact .form-control:hover{
-	border-top: 2px solid #2F937B;
-}
-nav#tf-footer {
-	background: #222222;
-	padding: 3% 0 2% 0;
-	color: #f1f1f1;
-}
-=======
 
 #tf-contact .form-control:focus,
 #tf-contact .form-control:hover{
@@ -363,17 +238,4 @@ nav#tf-footer {
     justify-content: center;
     align-items: center; /* Optional */
     text-align: center;
-
 }
-
-input[type=submit] {
-    padding:5px 15px; 
-    background:#ccc; 
-    border:0 none;
-    cursor:pointer;
-    -webkit-border-radius: 5px;
-    border-radius: 5px; 
-    color: blue;
-}
-
->>>>>>> jbranch

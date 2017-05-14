@@ -60,9 +60,6 @@ def login():
 def about():
 	return render_template('about.html')
 	
-@app.route('/picture')
-def pictue():
-	return render_template('picture.html')
 	
 if __name__ == '__main__':
     app.run(

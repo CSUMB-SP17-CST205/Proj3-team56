@@ -1,5 +1,14 @@
+# Author: Jonathan Cabrera
+# Last Modified : 03-15-17
+# Description: compares a picture of someone to the trianed file of that person
+#              in order to get the percentge of similarity. 
+# Original Author: Peter Warden
+# Date: February 28, 2016
+# Availability: https://petewarden.com/2016/02/28/tensorflow-for-poets/
+
 import tensorflow as tf, sys
 import os
+
 
 def image_accuracy(image_path):
     

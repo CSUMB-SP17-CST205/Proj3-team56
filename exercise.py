@@ -1,3 +1,11 @@
+"""
+This function calcuates the amount of time it takes to burn a specified amount of calories. 
+It takes in two arguments, which are the amounts of calories you want to calculate the time for
+
+Resource:
+https://www.hss.edu/conditions_burning-calories-with-exercise-calculating-estimated-energy-expenditure.asp
+"""
+
 def time2Burn(calFromFood, excercise):
     if excercise == "biking":
         MET = 4.0

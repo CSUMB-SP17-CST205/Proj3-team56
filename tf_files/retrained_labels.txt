@@ -1,0 +1,8 @@
+innouts_double_double
+mcdonalds_double_quarter_pounder_with_cheese
+mcdonalds_big_mac
+mcdonalds_cheeseburger
+burger_kings_medium_fries
+burger_kings_hot_dog
+innouts_fries
+burger_kings_whopper

@@ -1,0 +1,44 @@
+# Author: Jonathan Cabrera
+# Last Modified : 03-15-17
+# Description: compares a picture of someone to the trianed file of that person
+#              in order to get the percentge of similarity. 
+# Original Author: Peter Warden
+# Date: February 28, 2016
+# Availability: https://petewarden.com/2016/02/28/tensorflow-for-poets/
+
+import tensorflow as tf, sys
+import os
+
+
+def image_accuracy(image_path):
+    
+    os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
+
+    # Read in the image_data
+    image_data = tf.gfile.FastGFile(image_path, 'rb').read()
+    
+    # Loads label file, strips off carriage return
+    label_lines = [line.rstrip() for line in tf.gfile.GFile("tf_files/retrained_labels.txt")]
+
+    # Unpersists graph from file
+    with tf.gfile.FastGFile("tf_files/retrained_graph.pb", 'rb') as f:
+
+        graph_def = tf.GraphDef()
+        graph_def.ParseFromString(f.read())
+        _ = tf.import_graph_def(graph_def, name='')
+    
+    with tf.Session() as sess:
+        # Feed the image_data as input to the graph and get first prediction
+        softmax_tensor = sess.graph.get_tensor_by_name('final_result:0')
+    
+        predictions = sess.run(softmax_tensor, \
+                 {'DecodeJpeg/contents:0': image_data})
+    
+        # Sort to show labels of first prediction in order of confidence
+        top_k = predictions[0].argsort()[-len(predictions[0]):][::-1]
+    
+        for node_id in top_k:
+            food_item = label_lines[node_id]
+            score = predictions[0][node_id]
+            print('%s (score = %.5f)' % (food_item, score))
+            return [food_item, score]

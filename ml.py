@@ -1,6 +1,6 @@
 # Author: Jonathan Cabrera
 # Last Modified : 03-15-17
-# Description: compares a picture of someone to the trianed file of that person
+# Description: compares a picture of a food item to the trained file of other food items
 #              in order to get the percentge of similarity. 
 # Original Author: Peter Warden
 # Date: February 28, 2016

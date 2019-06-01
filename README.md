@@ -1,5 +1,5 @@
 Name of project: Calstimation
-Name of team members: Sovreign-Ariel S. McCarthy, Emmanuel Guido, Jonathan Cabrera
+Name of team members: Morgan Hamilton, Emmanuel Guido, Jonathan Cabrera
 Class: CST 205
 Date:05-15-17
 Link to GitHub repo: https://github.com/CSUMB-SP17-CST205/Proj3-team56
